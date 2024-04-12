@@ -1,0 +1,29 @@
+<body>
+    <mat-card>
+        <b><span>Dashboard</span></b>
+    </mat-card>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <h2 class="title">Total Catégorie Stages</h2>
+                <h1 class="title">{{data?.category}}</h1>
+                <p><button class="button" [routerLink]="['/category']">View Category</button></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <h2 class="title">Total Stages</h2>
+                <h1 class="title">{{data?.stage}}</h1>
+                <p><button class="button" [routerLink]="['/stage']">View Stage</button></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <h2 class="title">Total stage affecté</h2>
+                <h1 class="title">{{data?.bill}}</h1>
+                <p><button class="button" [routerLink]="['/bill']">View Stage affecté</button></p>
+            </div>
+        </div>
+    </div>
+</body>
